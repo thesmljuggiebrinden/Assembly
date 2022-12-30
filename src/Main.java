@@ -153,7 +153,7 @@ public class Main
         registers[3] = 0;
         PC = 0;
         memory[0xfe] = 2;
-        memory[253] = 3;
+        memory[0xfd] = 3;
         for (int i = 0; i < 100; i++)
         {
             int instructions = memory[PC];
@@ -327,7 +327,7 @@ public class Main
                 // HALT instruction
                 System.out.printf("PC = %x, inst = %x, op = HALT, A = %x, B = %x, C = %x, D = %x \n",
                         PC, instructions, registers[0],registers[1],registers[2],registers[3]);
-                System.out.println("memory[ff] is "+ memory[0xff]);
+                System.out.println("Memory[ff] is "+ memory[0xff]);
                 break;
             }
 
