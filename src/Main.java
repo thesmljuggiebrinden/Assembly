@@ -327,7 +327,7 @@ public class Main
                 // HALT instruction
                 System.out.printf("PC = %x, inst = %x, op = HALT, A = %x, B = %x, C = %x, D = %x \n",
                         PC, instructions, registers[0],registers[1],registers[2],registers[3]);
-                System.out.println("Memory[ff] is "+ memory[0xff]);
+                System.out.println("Memory[FF] is "+ memory[0xff]);
                 break;
             }
 
